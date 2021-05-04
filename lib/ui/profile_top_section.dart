@@ -2,7 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_v1/profiledata/profile.dart';
 
-import 'profiledata/profile.dart';
+
 
 class ProfileTopSection extends StatefulWidget {
   final Profile profile;
