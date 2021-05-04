@@ -51,11 +51,32 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          ProfileTopSection(profile),
+          Expanded(
+            child: ListView(
+              children: [ProfileTopSection(profile)],
+            ),
+          ),
+          Row(
+            children: [
+              Expanded(
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text('별로에요'),
+                ),
+              ),
+              Expanded(
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text('좋아해요'),
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );
   }
+
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);

@@ -32,7 +32,7 @@ class _ProfileTopSectionState extends State<ProfileTopSection> {
               .toList(),
           options: CarouselOptions(height: 370.0,
           viewportFraction: 1,
-          enableInfiniteScroll: false,
+          enableInfiniteScroll: true,
           autoPlay: true,
           onPageChanged:(index, reason) {
             setState(() {
